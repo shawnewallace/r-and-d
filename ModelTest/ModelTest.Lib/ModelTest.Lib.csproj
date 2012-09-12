@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0962958E-711A-4CAD-8874-536891B17BE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModelTest.Lib</RootNamespace>
+    <AssemblyName>ModelTest.Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataAnnotationsExtensions">
+      <HintPath>..\packages\DataAnnotationsExtensions.1.1.0.0\lib\NETFramework40\DataAnnotationsExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="PhoneNumbers">
+      <HintPath>..\packages\libphonenumber-csharp.4.10.0.62\lib\PhoneNumbers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\IId.cs" />
+    <Compile Include="Core\ILogged.cs" />
+    <Compile Include="Core\INamed.cs" />
+    <Compile Include="DataAnnotations\PhoneNumberAttribute.cs" />
+    <Compile Include="Data\ModelTestContext.cs" />
+    <Compile Include="Migrations\201209111801515_InitialCreate.cs" />
+    <Compile Include="Migrations\201209111801515_InitialCreate.Designer.cs">
+      <DependentUpon>201209111801515_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201209111812016_AddedEvent.cs" />
+    <Compile Include="Migrations\201209111812016_AddedEvent.Designer.cs">
+      <DependentUpon>201209111812016_AddedEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201209111824117_AddedEventAttendeeRelationship.cs" />
+    <Compile Include="Migrations\201209111824117_AddedEventAttendeeRelationship.Designer.cs">
+      <DependentUpon>201209111824117_AddedEventAttendeeRelationship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201209111827447_RelatedUsersToEventsAsOrganizers.cs" />
+    <Compile Include="Migrations\201209111827447_RelatedUsersToEventsAsOrganizers.Designer.cs">
+      <DependentUpon>201209111827447_RelatedUsersToEventsAsOrganizers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201209111925195_DontKnow.cs" />
+    <Compile Include="Migrations\201209111925195_DontKnow.Designer.cs">
+      <DependentUpon>201209111925195_DontKnow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201209111934276_MakeNameAndEmailAddressNotRequired.cs" />
+    <Compile Include="Migrations\201209111934276_MakeNameAndEmailAddressNotRequired.Designer.cs">
+      <DependentUpon>201209111934276_MakeNameAndEmailAddressNotRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201209111938024_MakeILoggedNullable.cs" />
+    <Compile Include="Migrations\201209111938024_MakeILoggedNullable.Designer.cs">
+      <DependentUpon>201209111938024_MakeILoggedNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Attendee.cs" />
+    <Compile Include="Models\EntityBase.cs" />
+    <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Models\_models.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201209111801515_InitialCreate.resx">
+      <DependentUpon>201209111801515_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201209111812016_AddedEvent.resx">
+      <DependentUpon>201209111812016_AddedEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201209111824117_AddedEventAttendeeRelationship.resx">
+      <DependentUpon>201209111824117_AddedEventAttendeeRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201209111827447_RelatedUsersToEventsAsOrganizers.resx">
+      <DependentUpon>201209111827447_RelatedUsersToEventsAsOrganizers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201209111925195_DontKnow.resx">
+      <DependentUpon>201209111925195_DontKnow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201209111934276_MakeNameAndEmailAddressNotRequired.resx">
+      <DependentUpon>201209111934276_MakeNameAndEmailAddressNotRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201209111938024_MakeILoggedNullable.resx">
+      <DependentUpon>201209111938024_MakeILoggedNullable.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
