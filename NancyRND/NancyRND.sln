@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NancyRND.Lib", "NancyRND.Lib\NancyRND.Lib.csproj", "{B29CFC77-087A-4B6C-8B66-983F26F7A212}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NancyRND.Api", "NancyRND.Api\NancyRND.Api.csproj", "{E09F7DE7-E3C3-4AC9-B9BF-1D13970D61C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NancyRND.Api.Integration.Tests", "NancyRND.Api.Integration.Tests\NancyRND.Api.Integration.Tests.csproj", "{8B2B0716-6F49-4599-BF95-AE45AE734B18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B29CFC77-087A-4B6C-8B66-983F26F7A212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29CFC77-087A-4B6C-8B66-983F26F7A212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29CFC77-087A-4B6C-8B66-983F26F7A212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29CFC77-087A-4B6C-8B66-983F26F7A212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E09F7DE7-E3C3-4AC9-B9BF-1D13970D61C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09F7DE7-E3C3-4AC9-B9BF-1D13970D61C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09F7DE7-E3C3-4AC9-B9BF-1D13970D61C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E09F7DE7-E3C3-4AC9-B9BF-1D13970D61C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B2B0716-6F49-4599-BF95-AE45AE734B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B2B0716-6F49-4599-BF95-AE45AE734B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B2B0716-6F49-4599-BF95-AE45AE734B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B2B0716-6F49-4599-BF95-AE45AE734B18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
