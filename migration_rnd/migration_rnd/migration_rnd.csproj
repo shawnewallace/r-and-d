@@ -64,12 +64,17 @@
     <Compile Include="Migrations\201208141308276_ChangedStuff.Designer.cs">
       <DependentUpon>201208141308276_ChangedStuff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201210151733099_AddedWhiskeyTangoFoxtrot.cs" />
+    <Compile Include="Migrations\201210151733099_AddedWhiskeyTangoFoxtrot.Designer.cs">
+      <DependentUpon>201210151733099_AddedWhiskeyTangoFoxtrot.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="measurements-weight-combined.csv" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
