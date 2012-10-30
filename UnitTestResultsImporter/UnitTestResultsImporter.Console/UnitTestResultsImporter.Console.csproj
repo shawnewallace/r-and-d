@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9856B06-F0D2-4426-B17D-25DD810D0E19}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnitTestResultsImporter.Console</RootNamespace>
+    <AssemblyName>UnitTestResultsImporter.Console</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201210221718091_AddedStuff.cs" />
+    <Compile Include="Migrations\201210221718091_AddedStuff.Designer.cs">
+      <DependentUpon>201210221718091_AddedStuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201210221724062_RelatedTestGroupToTestRun.cs" />
+    <Compile Include="Migrations\201210221724062_RelatedTestGroupToTestRun.Designer.cs">
+      <DependentUpon>201210221724062_RelatedTestGroupToTestRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201210221804169_Two.cs" />
+    <Compile Include="Migrations\201210221804169_Two.Designer.cs">
+      <DependentUpon>201210221804169_Two.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201210231513149_SelfReferenced.cs" />
+    <Compile Include="Migrations\201210231513149_SelfReferenced.Designer.cs">
+      <DependentUpon>201210231513149_SelfReferenced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201210231515518_MadeParentNullable.cs" />
+    <Compile Include="Migrations\201210231515518_MadeParentNullable.Designer.cs">
+      <DependentUpon>201210231515518_MadeParentNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201210231525202_AddStatus.cs" />
+    <Compile Include="Migrations\201210231525202_AddStatus.Designer.cs">
+      <DependentUpon>201210231525202_AddStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201210221718091_AddedStuff.resx">
+      <DependentUpon>201210221718091_AddedStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201210221724062_RelatedTestGroupToTestRun.resx">
+      <DependentUpon>201210221724062_RelatedTestGroupToTestRun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201210221804169_Two.resx">
+      <DependentUpon>201210221804169_Two.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201210231513149_SelfReferenced.resx">
+      <DependentUpon>201210231513149_SelfReferenced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201210231515518_MadeParentNullable.resx">
+      <DependentUpon>201210231515518_MadeParentNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201210231525202_AddStatus.resx">
+      <DependentUpon>201210231525202_AddStatus.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
