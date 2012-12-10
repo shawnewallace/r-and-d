@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRRND.Web", "SignalRRND.Web\SignalRRND.Web.csproj", "{60126C17-01D3-40B4-A75B-D2090B7B94EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60126C17-01D3-40B4-A75B-D2090B7B94EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60126C17-01D3-40B4-A75B-D2090B7B94EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60126C17-01D3-40B4-A75B-D2090B7B94EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60126C17-01D3-40B4-A75B-D2090B7B94EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

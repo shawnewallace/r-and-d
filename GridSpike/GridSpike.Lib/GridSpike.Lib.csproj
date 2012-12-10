@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C56EF40B-6CFE-4D73-9A7F-1B68B2ABBB67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GridSpike.Lib</RootNamespace>
+    <AssemblyName>GridSpike.Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\GridSpikeContext.cs" />
+    <Compile Include="Migrations\201212061510075_InitialCreation.cs" />
+    <Compile Include="Migrations\201212061510075_InitialCreation.Designer.cs">
+      <DependentUpon>201212061510075_InitialCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201212061518382_AddBasicPropertiesToQueuedTest.cs" />
+    <Compile Include="Migrations\201212061518382_AddBasicPropertiesToQueuedTest.Designer.cs">
+      <DependentUpon>201212061518382_AddBasicPropertiesToQueuedTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201212062129323_AddedCompletedOnToQueuedTest.cs" />
+    <Compile Include="Migrations\201212062129323_AddedCompletedOnToQueuedTest.Designer.cs">
+      <DependentUpon>201212062129323_AddedCompletedOnToQueuedTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201212062130484_ChangedCompletedOnToBeNullable.cs" />
+    <Compile Include="Migrations\201212062130484_ChangedCompletedOnToBeNullable.Designer.cs">
+      <DependentUpon>201212062130484_ChangedCompletedOnToBeNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\EntityBase.cs" />
+    <Compile Include="Model\IId.cs" />
+    <Compile Include="Model\QueuedTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestGetter.cs" />
+    <Compile Include="TestQueuer.cs" />
+    <Compile Include="TestQueueRequest.cs" />
+    <Compile Include="TestQueueService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201212061510075_InitialCreation.resx">
+      <DependentUpon>201212061510075_InitialCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201212061518382_AddBasicPropertiesToQueuedTest.resx">
+      <DependentUpon>201212061518382_AddBasicPropertiesToQueuedTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201212062129323_AddedCompletedOnToQueuedTest.resx">
+      <DependentUpon>201212062129323_AddedCompletedOnToQueuedTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201212062130484_ChangedCompletedOnToBeNullable.resx">
+      <DependentUpon>201212062130484_ChangedCompletedOnToBeNullable.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
